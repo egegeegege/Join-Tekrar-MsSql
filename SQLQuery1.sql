@@ -39,6 +39,11 @@ select h.Adi,h.Soyadi,b.Bolum_Adi,b.Bulundugu_Blok
 from Hemsireler h
 join Bolumler b on h.Bolum_ID = b.ID
 
+  
+select * from Orders o 
+join Employees e on o.EmployeeID = e.EmployeeID
+join Customers c on o.CustomerID = c.CustomerID
+
 --orhan çınar adlı doktorun verdiği randevu ve tahlil sonuçlarının durumunu gösterme
 
 select  d.Adi as 'Doktor Adı', d.Soyadi as 'Doktor Soyadı',
